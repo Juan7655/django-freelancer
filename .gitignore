@@ -1,0 +1,13 @@
+.idea
+*__pycache__* 
+venv/ 
+docker/ 
+freelancer_site/freelancer_site/settings2.py 
+freelancer_site/accounts/static/resume/vendor
+freelancer_site/accounts/static/admin/js 
+ freelancer_site/accounts/static/resume/scss 
+*css
+*js
+*svg
+*png
+*woff

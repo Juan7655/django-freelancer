@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %} {{ title }} {% endblock title %}
+
+{% block content %}
+    <form method="post">
+        {% csrf_token %}
+        <table style="border-collapse:separate; border-spacing:1em;">
+            {% for field in login_form %}
+                <tr>
+                    <td style="font-family: 'Merienda', cursive;">
+                        <b class="weight-input p-4 rounded text-right">{{ field.label }}</b>
+                    </td>
+                    <td class="pl-2 rounded">
+                        {{ field }}
+                    </td>
+                </tr>
+            {% endfor %}
+        </table>
+        <button class="m-3 rounded m-4" type="submit">Submit</button>
+    </form>
+{% endblock content %}
